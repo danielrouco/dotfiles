@@ -123,13 +123,6 @@ bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec swaynag -t warning -m 'Exit sway?' -B 'Yes' 'swaymsg exit'
 
-	#Shutdown computer
-    bindsym $mod+Shift+s exec swaynag -t warning -m 'Shutdown?' -B 'Yes' 'shutdown -h now'
-
-	#Reboot computer
-    bindsym $mod+Shift+r exec swaynag -t warning -m 'Reboot?' -B 'Yes' 'reboot'
-
-
 #
 # Moving around:
 #
