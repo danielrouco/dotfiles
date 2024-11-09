@@ -7,7 +7,7 @@
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "sway/mode", "sway/scratchpad", "custom/media", "sway/window"],
     "modules-center": ["clock"],
-    "modules-right": [ "pulseaudio", "backlight" ,"cpu", "memory", "network", "battery"],
+    "modules-right": [ "bluetooth", "pulseaudio", "backlight" ,"cpu", "memory", "network", "battery"],
     //  Modules configuration
     // "sway/workspaces": {
     //     "disable-scroll": true,
@@ -163,6 +163,11 @@
             "spotify": "",
             "default": "🎜"
         },
+		"bluetooth": {
+			"format": "{status} ",
+			"format-connected": "{device_alias} ",
+			"format-connected-battery": "{device_alias} {device_battery_percentage} %"
+		},
         "escape": true,
         "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name

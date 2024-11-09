@@ -93,7 +93,8 @@ button:hover {
 #mode,
 #idle_inhibitor,
 #scratchpad,
-#mpd {
+#mpd,
+#bluetooth{
 	margin: 5px 0px;
     padding: 2px 5px 0px 5px;
     color: #ffffff;
@@ -289,4 +290,15 @@ label:focus {
 
 #scratchpad.empty {
 	background-color: transparent;
+}
+
+#bluetooth{
+	background-color: #2980b9;
+}
+
+#bluetooth.disabled{
+	font-size: 0;
+	padding: 0;
+	margin: 0;
+	opacity: 0;
 }
