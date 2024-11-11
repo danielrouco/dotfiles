@@ -85,11 +85,10 @@
         "spacing": 10
     },
     "clock": {
-		"interval": 5,
+		"interval": 60,
         "timezone": "Europe/Madrid",
-		"format": "{: %H : %M : %S }",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{: %d - %m - %Y }"
+		"format": "{: %d %b, %H : %M }",
+        "tooltip-format": "<tt>{calendar}</tt>"
     },
     "cpu": {
         "format": "{usage}% ",
@@ -264,11 +263,10 @@
         "spacing": 10
     },
     "clock": {
-		"interval": 5,
+		"interval": 60,
         "timezone": "Europe/Madrid",
-		"format": "{: %H : %M : %S }",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{: %d - %m - %Y }"
+		"format": "{: %d %b, %H : %M }",
+        "tooltip-format": "<tt>{calendar}</tt>"
     },
     "cpu": {
         "format": "{usage}% ",
