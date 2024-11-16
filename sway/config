@@ -1,5 +1,3 @@
-# Default config for sway
-#
 # Copy this to ~/.config/sway/config and edit it to your liking.
 #
 # Read `man 5 sway` for a complete reference.
@@ -31,6 +29,10 @@ output * bg ~/Imágenes/Wallpapers/actual/*.jpg fill
 #Position
 output HDMI-A-1 position 0,0
 output eDP-1 position 1920,0
+#Default workspaces in each monitor
+#The second monitor in workspace 1 is telling that if HDMI-A-1 is not connected the default workspace for eDP-1 will be 1
+workspace 1 output HDMI-A-1 eDP-1
+workspace 10 output eDP-1
 #
 # Example configuration:
 #
