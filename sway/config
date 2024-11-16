@@ -78,6 +78,8 @@ bindsym XF86AudioLowerVolume exec pamixer -d 5
 #MICROPHONE
 bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
+#Hide cursor while typing
+seat * hide_cursor when-typing enable
 
 ### Input configuration
 #
