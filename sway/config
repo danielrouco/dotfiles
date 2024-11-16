@@ -181,8 +181,8 @@ bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
     # We just use 1-10 as the default.
 
 # Move a workspace to a different monitor
-bindsym $mod+Shift+a move workspace to output eDP-1
-bindsym $mod+Shift+b move workspace to output HDMI-A-1
+bindsym $mod+Shift+b move workspace to output eDP-1
+bindsym $mod+Shift+a move workspace to output HDMI-A-1
 
 #
 # Layout stuff:
