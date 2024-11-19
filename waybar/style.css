@@ -154,13 +154,13 @@ label:focus {
 }
 
 #cpu {
-	background-color: #f1c40f;
-    /*background-color: #2ecc71;*/
+    background-color: #2ecc71;
     color: #000000;
 }
 
 #memory {
-    background-color: #9b59b6;
+	color: black;
+    background-color: #f1c40f;
 }
 
 #disk {
@@ -168,9 +168,8 @@ label:focus {
 }
 
 #backlight {
-	color: black;
-	background-color: #2ecc71;
-    /*background-color: #f1c40f;*/
+	color: white;
+    background-color: #9b59b6;
 	padding-right: 7px;
 }
 
