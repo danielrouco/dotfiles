@@ -270,6 +270,8 @@ exec waybar
 
 # Aspecto
 default_border none
+
 gaps inner 10
+gaps top -10
 
 include /etc/sway/config.d/*
