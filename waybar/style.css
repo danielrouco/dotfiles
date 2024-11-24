@@ -113,12 +113,15 @@ button:hover {
 	margin: 3px 2px;
 	padding-top: 3px;
 	margin-left: -10px;
-	border: 2px black solid;
 	border-radius: 4px;
 	background-color: black;
     color: #ffffff;
 
 }
+
+window#waybar.empty #window {  
+ background:none;  
+}  
 
 /* If workspaces is the leftmost module, omit left margin */
 .modules-left > widget:first-child > #workspaces {
