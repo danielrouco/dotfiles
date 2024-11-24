@@ -125,7 +125,7 @@ window#waybar.empty #window {
 
 /* If workspaces is the leftmost module, omit left margin */
 .modules-left > widget:first-child > #workspaces {
-    margin-left: 10px;
+    margin-left: 8px;
 }
 
 /* If workspaces is the rightmost module, omit right margin */
@@ -141,7 +141,7 @@ window#waybar.empty #window {
 #battery {
     background-color: #f0932b;
     color: white;
-	margin-right: 5px;
+	margin-right: 10px;
 }
 
 #battery.charging, #battery.plugged {
