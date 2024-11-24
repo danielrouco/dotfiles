@@ -96,8 +96,8 @@ button:hover {
 #scratchpad,
 #mpd,
 #bluetooth{
-	margin: 5px 0px;
-    padding: 2px 5px 0px 5px;
+	margin: 3px 0px;
+    padding: 3px 5px 0px 5px;
     color: #ffffff;
 	border-radius: 4px;
 	border: 2px black solid;
@@ -105,7 +105,7 @@ button:hover {
 
 #window,
 #workspaces {
-    margin: 0 4px;
+    margin: 0 2px;
 }
 
 #window{
