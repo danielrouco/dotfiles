@@ -269,9 +269,15 @@ bindsym $mod+r mode "resize"
 exec waybar
 
 # Aspecto
-default_border none
+default_border pixel 2px
 
 gaps inner 10
 gaps top -10
+
+# Colores
+client.focused #000000 #000000 #ffffff #000000 #2ecc71
+# client.unfocused        #888888    
+# client.focused_inactive #444444   
+# client.urgent           #ff0000   
 
 include /etc/sway/config.d/*
