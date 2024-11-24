@@ -53,7 +53,7 @@ button:hover {
 
 #workspaces button {
     padding: 0 5px;
-	margin: 3px 2px;
+	margin: 3px 3px;
 	padding-top: 3px;
 	border: 2px black solid;
 	border-radius: 4px;
@@ -96,8 +96,7 @@ button:hover {
 #scratchpad,
 #mpd,
 #bluetooth{
-	margin: 3px 0px;
-	margin-left: -6px;
+	margin: 3px 2px;
     padding: 3px 5px 0px 5px;
     color: #ffffff;
 	border-radius: 4px;
@@ -106,14 +105,13 @@ button:hover {
 
 #window,
 #workspaces {
-    margin: 0 2px;
+    margin: 0;
 }
 
 #window{
 	padding: 0 5px;
-	margin: 3px 2px;
+	margin: 3px 0px;
 	padding-top: 3px;
-	margin-left: -10px;
 	border-radius: 4px;
 	background-color: black;
     color: #ffffff;
