@@ -62,7 +62,6 @@ button:hover {
 }
 
 #workspaces button:hover {
-    background: rgba(0, 0, 0, 0.2);
 }
 
 #workspaces button.focused {
@@ -305,7 +304,7 @@ label:focus {
 }
 
 #scratchpad {
-    background: rgba(0, 0, 0, 0.2);
+    background: rgb(0, 0, 0);
 }
 
 #scratchpad.empty {
