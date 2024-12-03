@@ -10,22 +10,31 @@
     "modules-center": ["clock"],
     "modules-right": [ "bluetooth", "pulseaudio", "backlight" ,"cpu", "memory", "network", "battery"],
     //  Modules configuration
-    // "sway/workspaces": {
-    //     "disable-scroll": true,
-    //     "all-outputs": true,
-    //     "warp-on-scroll": false,
-    //     "format": "{name}: {icon}",
-    //     "format-icons": {
-    //         "1": "",
-    //         "2": "",
-    //         "3": "",
+     "sway/workspaces": {
+         "disable-scroll": true,
+         "all-outputs": true,
+         "warp-on-scroll": false,
+         "format": "{name}{icon}",
+         "format-icons": {
+             "1": " ",
+             "2": " ",
+             "3": " ",
+    //         "4": "",
+    //         "4": "",
+    //         "5": "",
+    //         "6": "",
+    //         "7": "",
+    //         "8": "",
+    //         "9": "",
+    //         "10": "",
     //         "4": "",
     //         "5": "",
     //         "urgent": "",
-    //         //"focused": "",
-    //         "default": ""
-    //     }
-    // },
+    //         "focused": "",
+    //        "default": ""
+            "default": ""
+         }
+     },
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
