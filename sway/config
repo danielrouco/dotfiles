@@ -99,6 +99,8 @@ seat * hide_cursor when-typing enable
 #
 # Basics:
 #
+	#Lock
+	bindsym $mod+Shift+s exec swaylock -c 000000
     # Start a terminal
     bindsym $mod+Return exec $term
 
