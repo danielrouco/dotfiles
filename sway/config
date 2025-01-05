@@ -78,6 +78,9 @@ bindsym XF86AudioLowerVolume exec pamixer -d 5
 #MICROPHONE
 bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
+#SCREENSHOOT
+bindsym $mod+g exec grimshot --notify savecopy screen
+bindsym $mod+Shift+g exec grimshot --notify savecopy area
 #Hide cursor while typing
 seat * hide_cursor when-typing enable
 
