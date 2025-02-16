@@ -163,23 +163,13 @@
         },
         "on-click": "pavucontrol"
     },
-    "custom/media": {
-        "format": "{icon} {}",
-        "return-type": "json",
-        "max-length": 40,
-        "format-icons": {
-            "spotify": "",
-            "default": "🎜"
-        },
 		"bluetooth": {
-			"format": "{status} ",
-			"format-connected": "{device_alias} ",
-			"format-connected-battery": "{device_alias} {device_battery_percentage} %"
-		},
-        "escape": true,
-        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
-        // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
-    }
+			"format-disabled": "",
+			"format": " {status}",
+			"format-connected": " {device_alias}",
+			"format-connected-battery": " {device_alias} {device_battery_percentage}%",
+			"on-click": "$HOME/scripts/bt-bat/bt-bat.sh"
+		}
 },
 
 
@@ -194,7 +184,7 @@
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "sway/mode", "sway/scratchpad"],
     "modules-center": ["clock"],
-    "modules-right": [ "bluetooth", "pulseaudio" ,"cpu", "memory", "network", "battery"],
+    "modules-right": ["bluetooth", "pulseaudio" ,"cpu", "memory", "network", "battery"],
     //  Modules configuration
      "sway/workspaces": {
          "disable-scroll": true,
@@ -286,7 +276,7 @@
     },
     "cpu": {
         "format": "{usage}% ",
-        "tooltip": false
+        "tooltip": true
     },
     "memory": {
         "format": "{}% "
@@ -349,21 +339,11 @@
         },
         "on-click": "pavucontrol"
     },
-    "custom/media": {
-        "format": "{icon} {}",
-        "return-type": "json",
-        "max-length": 40,
-        "format-icons": {
-            "spotify": "",
-            "default": "🎜"
-        },
 		"bluetooth": {
-			"format": "{status} ",
-			"format-connected": "{device_alias} ",
-			"format-connected-battery": "{device_alias} {device_battery_percentage} %"
-		},
-        "escape": true,
-        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
-        // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
-    }
+			"format-disabled": "",
+			"format": " {status}",
+			"format-connected": " {device_alias}",
+			"format-connected-battery": " {device_alias} {device_battery_percentage}%",
+			"on-click": "$HOME/scripts/bt-bat/bt-bat.sh"
+		}
 }]
