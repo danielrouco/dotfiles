@@ -95,7 +95,7 @@
     "clock": {
 		"interval": 60,
         "timezone": "Europe/Madrid",
-		"format": "{: %d %b, %H : %M }",
+		"format": "{: %a, %d %b %H : %M }",
         "tooltip-format": "<tt>{calendar}</tt>"
     },
     "cpu": {
@@ -271,7 +271,7 @@
     "clock": {
 		"interval": 60,
         "timezone": "Europe/Madrid",
-		"format": "{: %d %b, %H : %M }",
+		"format": "{: %a, %d %b %H : %M }",
         "tooltip-format": "<tt>{calendar}</tt>"
     },
     "cpu": {
