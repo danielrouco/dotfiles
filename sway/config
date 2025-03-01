@@ -113,6 +113,12 @@ seat * hide_cursor when-typing enable
 	#Start nautilus
 	bindsym $mod+n exec nautilus
 
+	#Start ranger
+	bindsym $mod+o exec foot ranger ~
+
+	#Start ranger int udc folder
+	bindsym $mod+u exec foot ranger ~/udc
+
 	#Start calendar
 	bindsym $mod+t exec /opt/google/chrome/chrome https://calendar.google.com/
 
