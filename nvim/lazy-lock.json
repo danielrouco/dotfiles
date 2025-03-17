@@ -1,6 +1,6 @@
 {
-  "cyberdream.nvim": { "branch": "main", "commit": "05d44f6a0fa9c2690fd027424aea73eedf12956f" },
-  "lazy.nvim": { "branch": "main", "commit": "7527af40ddd4a93a02911be570b32609b9d4ea53" },
+  "cyberdream.nvim": { "branch": "main", "commit": "094e4eb33e7d078cbf2105604a4246092eb8046e" },
+  "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },
   "nvim-hardline": { "branch": "main", "commit": "9b85ebfba065091715676fb440c16a37c465b9a5" },
   "peek.nvim": { "branch": "master", "commit": "5820d937d5414baea5f586dc2a3d912a74636e5b" }
 }
