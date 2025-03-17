@@ -17,6 +17,11 @@ window#waybar {
     transition-duration: .5s;
 }
 
+tooltip{
+	background-color: black;
+	border: 0;
+}
+
 window#waybar.hidden {
     opacity: 0.2;
 }
