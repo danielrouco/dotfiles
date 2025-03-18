@@ -165,14 +165,11 @@ alias bluetui=/opt/bluetui/bin
 #    W A Y B A R
 alias rwb="killall waybar && waybar &"
 
-# ARDUINO permissions
-alias arduino-permission="sudo chmod a+rx /dev/ttyACM0"
-
 # JAVA JRE
 alias java="/opt/jre/bin/java"
 
-# TEMPORAL
-alias p1="cd ~/udc/pro2/p/p1/P1"
+# TEMPORAL ALIAS
+source ~/.temporalalias.sh
 
 #Bashrc backup
 alias gaddbashrc="cp ~/.bashrc ~/.config/ && cd ~/.config && git add .bashrc"
