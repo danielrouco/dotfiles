@@ -10,12 +10,11 @@ My linux dotfiles
 - **Zathura:** A simple PDF viewer with vim keybindings
 - **Ranger:** A terminal file manager with vim keybindings
 ## Screenshots
+![Screenshot6](https://github.com/user-attachments/assets/1017859a-dbba-4fee-b88d-bc9dc396b8d6)
 ![Screenshot1](https://github.com/user-attachments/assets/044d7421-ade2-4050-9380-f53c160168cd)
-
-![Screenshot2](https://github.com/user-attachments/assets/e45477d8-f05a-47e5-a90c-6532c5546347)
-
+![Screenshot5](https://github.com/user-attachments/assets/a1289b59-bf50-42fb-a320-9b1ee2217dbf)
 ![Screenshot3](https://github.com/user-attachments/assets/642b7ae0-c8da-4dc5-981b-8f08ae0d560d)
-
+![Screenshot2](https://github.com/user-attachments/assets/e45477d8-f05a-47e5-a90c-6532c5546347)
 ![Screenshot4](https://github.com/user-attachments/assets/e67e0a92-b501-487f-bf64-632408d050c8)
 ## Setup
 1. Clone the repository
