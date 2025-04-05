@@ -119,6 +119,9 @@ seat * hide_cursor when-typing enable
 	#Start ranger int udc folder
 	bindsym $mod+u exec foot ranger ~/udc
 
+	#Start zathura
+	bindsym $mod+z exec zathura
+
 	#Start calendar
 	bindsym $mod+t exec /opt/google/chrome/chrome https://calendar.google.com/
 
