@@ -33,6 +33,9 @@ output eDP-1 position 1920,0
 #The second monitor in workspace 1 is telling that if HDMI-A-1 is not connected the default workspace for eDP-1 will be 1
 workspace 1 output HDMI-A-1 eDP-1
 workspace 10 output eDP-1
+
+assign [app_id="zathura"] workspace 5
+for_window [title="nmtui-connect"] floating enable
 #
 # Example configuration:
 #
@@ -124,6 +127,9 @@ seat * hide_cursor when-typing enable
 
 	#Start calendar
 	bindsym $mod+t exec /opt/google/chrome/chrome https://calendar.google.com/
+
+	#Start nmtui
+	bindsym $mod+i exec foot --title nmtui-connect -e nmtui-connect
 
     # Kill focused window
     bindsym $mod+Shift+q kill
