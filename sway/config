@@ -35,6 +35,7 @@ workspace 1 output HDMI-A-1 eDP-1
 workspace 10 output eDP-1
 
 assign [app_id="zathura"] workspace 5
+assign [class="KeePassXC"] workspace 9
 for_window [title="nmtui-connect"] floating enable
 #
 # Example configuration:
