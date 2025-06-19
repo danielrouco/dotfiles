@@ -88,6 +88,9 @@ bindsym $mod+Shift+g exec grimshot --notify savecopy area
 #Hide cursor while typing
 seat * hide_cursor when-typing enable
 
+# AUTOSTART
+exec keepassxc -platform xcb & dropbox start -i &
+
 ### Input configuration
 #
 # Example configuration:
