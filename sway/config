@@ -31,7 +31,7 @@ output HDMI-A-1 position 0,0
 output eDP-1 position 1920,0
 #Default workspaces in each monitor
 #The second monitor in workspace 1 is telling that if HDMI-A-1 is not connected the default workspace for eDP-1 will be 1
-workspace 1 output HDMI-A-1 eDP-1
+workspace 9 output HDMI-A-1 eDP-1
 workspace 10 output eDP-1
 
 assign [app_id="zathura"] workspace 5
