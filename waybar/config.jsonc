@@ -16,7 +16,7 @@
          "warp-on-scroll": false,
          "format": "{name}{icon}",
          "format-icons": {
-             "1": " ",
+             "1": " ",
              "2": " ",
              "3": " ",
              "4": " ",
@@ -192,7 +192,7 @@
          "warp-on-scroll": false,
          "format": "{name}{icon}",
          "format-icons": {
-             "1": " ",
+             "1": " ",
              "2": " ",
              "3": " ",
              "4": " ",

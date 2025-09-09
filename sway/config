@@ -114,8 +114,8 @@ exec keepassxc -platform xcb & dropbox start -i &
     # Start a terminal
     bindsym $mod+Return exec $term
 
-	#Start chrome
-	bindsym $mod+c exec /opt/google/chrome/chrome
+	#Start firefox
+	bindsym $mod+c exec firefox
 
 	#Start nautilus
 	bindsym $mod+n exec nautilus
@@ -128,9 +128,6 @@ exec keepassxc -platform xcb & dropbox start -i &
 
 	#Start zathura
 	bindsym $mod+z exec zathura
-
-	#Start calendar
-	bindsym $mod+t exec /opt/google/chrome/chrome https://calendar.google.com/
 
 	#Start nmtui
 	bindsym $mod+i exec foot --title nmtui-connect -e nmtui-connect
