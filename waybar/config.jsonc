@@ -164,11 +164,11 @@
         "on-click": "pavucontrol"
     },
 		"bluetooth": {
-			"format-disabled": "",
+			"format-disabled": " off",
 			"format": " {status}",
 			"format-connected": " {device_alias}",
 			"format-connected-battery": " {device_alias} {device_battery_percentage}%",
-			"on-click": "$HOME/scripts/bt-bat/bt-bat.sh"
+			"on-click": "$HOME/scripts/switch-bt.sh"
 		}
 },
 
@@ -340,7 +340,7 @@
         "on-click": "pavucontrol"
     },
 		"bluetooth": {
-			"format-disabled": "",
+			"format-disabled": " {status}",
 			"format": " {status}",
 			"format-connected": " {device_alias}",
 			"format-connected-battery": " {device_alias} {device_battery_percentage}%",
