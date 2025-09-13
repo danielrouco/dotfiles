@@ -317,3 +317,7 @@ label:focus {
 #bluetooth{
 	background-color: #2980b9;
 }
+
+#bluetooth.off, #bluetooth.disabled{
+	background-color: #f53c3c;
+}

@@ -8,7 +8,7 @@
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "sway/mode", "sway/scratchpad"],
     "modules-center": ["clock"],
-    "modules-right": [ "bluetooth", "pulseaudio", "backlight" ,"cpu", "memory", "network", "battery"],
+    "modules-right": [ "bluetooth", "pulseaudio", "backlight","cpu", "memory", "network", "battery"],
     //  Modules configuration
      "sway/workspaces": {
          "disable-scroll": true,
@@ -340,10 +340,10 @@
         "on-click": "pavucontrol"
     },
 		"bluetooth": {
-			"format-disabled": " {status}",
+			"format-disabled": " off",
 			"format": " {status}",
 			"format-connected": " {device_alias}",
 			"format-connected-battery": " {device_alias} {device_battery_percentage}%",
-			"on-click": "$HOME/scripts/bt-bat/bt-bat.sh"
+			"on-click": "$HOME/scripts/switch-bt.sh"
 		}
 }]
