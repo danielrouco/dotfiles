@@ -35,6 +35,7 @@ workspace 9 output HDMI-A-1 eDP-1
 workspace 10 output eDP-1
 
 assign [app_id="zathura"] workspace 5
+assign [app_id="thunderbird"] workspace 7
 assign [class="KeePassXC"] workspace 9
 for_window [title="nmtui-connect"] floating enable
 #
@@ -128,6 +129,9 @@ exec keepassxc -platform xcb & dropbox start -i &
 
 	#Start zathura
 	bindsym $mod+z exec zathura
+
+	#Start thunderbird
+	bindsym $mod+t exec /opt/thunderbird/thunderbird
 
 	#Start nmtui
 	bindsym $mod+i exec foot --title nmtui-connect -e nmtui-connect
