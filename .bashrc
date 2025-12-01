@@ -144,7 +144,7 @@ marks(){
 }
 
 amarks(){
-	echo $2 $3 $4 >> $HOME/coding/hs/marks-hs/reports/$1.txt
+	echo "$2 $3 $4 $5 $6	// $7" >> $HOME/coding/hs/marks-hs/reports/$1.txt
 }
 
 vmarks(){
@@ -166,7 +166,7 @@ alias bluetui=/opt/bluetui/bin
 alias rwb="killall waybar && waybar &"
 
 # JAVA JRE
-alias java="/opt/jre/bin/java"
+alias jre="/opt/jre/bin/java"
 
 # TEMPORAL ALIAS
 source ~/.temporalalias.sh
@@ -176,3 +176,4 @@ alias gaddbashrc="cp ~/.bashrc ~/.config/ && cd ~/.config && git add .bashrc"
 
 [ -f "/home/robda20188/.ghcup/env" ] && . "/home/robda20188/.ghcup/env" # ghcup-env
 source ~/.local/share/blesh/ble.sh
+. "$HOME/.cargo/env"
