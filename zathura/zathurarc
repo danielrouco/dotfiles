@@ -1,6 +1,12 @@
 set window-title-basename "true"
 set selection-clipboard "clipboard"
 
+# Map 'h' to go back one page (navigate previous)
+map h navigate previous
+
+# Map 'l' to go forward one page (navigate next)
+map l navigate next
+
 # Dracula color theme for Zathura
 # Swaps Foreground for Background to get a light version if the user prefers
 
