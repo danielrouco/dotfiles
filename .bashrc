@@ -12,7 +12,6 @@ export SCRIPTS_DIR="$HOME/scripts"
 export _JAVA_AWT_WM_NONREPARENTING=1
 export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true'
 
-
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -177,3 +176,8 @@ alias gaddbashrc="cp ~/.bashrc ~/.config/ && cd ~/.config && git add .bashrc"
 [ -f "/home/robda20188/.ghcup/env" ] && . "/home/robda20188/.ghcup/env" # ghcup-env
 source ~/.local/share/blesh/ble.sh
 . "$HOME/.cargo/env"
+
+eval $(opam env)
+
+# Created by `pipx` on 2026-01-15 20:54:30
+export PATH="$PATH:/home/robda20188/.local/bin"
