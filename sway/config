@@ -19,6 +19,9 @@ set $term foot
 #set $menu dmenu_path | wmenu | xargs swaymsg exec --
 set $menu wofi --show drun --allow-images | xargs swaymsg exec --
 
+bindsym $mod+Alt+1 swaymsg exec sway
+bindsym $mod+Alt+2 swaymsg exec sway
+
 include /etc/sway/config-vars.d/*
 
 ### Output configuration
@@ -91,6 +94,10 @@ seat * hide_cursor when-typing enable
 
 # AUTOSTART
 exec keepassxc -platform xcb & dropbox start -i &
+
+# SCREEN SHARING
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+exec /usr/libexec/xdg-desktop-portal-wlr -r
 
 ### Input configuration
 #
