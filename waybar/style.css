@@ -1,6 +1,6 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-family: 'CommitMono Nerd Font Mono', FontAwesome, Roboto, Helvetica, Arial, sans-serif;
     font-size: 17px;
 }
 
@@ -9,8 +9,7 @@
 }
 
 window#waybar {
-	/*background-color: rgba(43, 48, 59, 0.5);*/
-	background-color: rgba(0, 0, 0, 0);
+	background-color: #242323;
     border-bottom: 3px;
     color: #ffffff;
 }
@@ -55,21 +54,17 @@ button:hover {
 }
 
 #workspaces button {
-    padding: 0 5px;
-	margin: 3px 3px;
-	padding-top: 3px;
-	border: 2px #3b3b3b solid;
-	border-radius: 5px;
-	background-color: black;
+	background-color: transparent;
     color: #ffffff;
+	border-top: 3px solid transparent;
+	padding: 0px 7px;
 }
 
 #workspaces button:hover {
 }
 
 #workspaces button.focused {
-    background-color: #2ecc71;
-	color: black;
+	border-top: 3px solid #14a5de;
 }
 
 #workspaces button.urgent {
@@ -98,11 +93,7 @@ button:hover {
 #scratchpad,
 #mpd,
 #bluetooth{
-	margin: 3px 2px;
-    padding: 3px 5px 0px 5px;
     color: #ffffff;
-	border-radius: 5px;
-	border: 2px black solid;
 }
 
 #window,
@@ -126,7 +117,7 @@ window#waybar.empty #window {
 
 /* If workspaces is the leftmost module, omit left margin */
 .modules-left > widget:first-child > #workspaces {
-    margin-left: 8px;
+    margin-left: 0;
 }
 
 /* If workspaces is the rightmost module, omit right margin */
@@ -135,36 +126,16 @@ window#waybar.empty #window {
 }
 
 #clock {
-    background-color: white;
-	color: black;
 }
 
 #battery {
-    background-color: #f0932b;
-    color: white;
-	margin-right: 10px;
 }
 
 #battery.charging, #battery.plugged {
-    color: #ffffff;
-    background-color: #26A65B;
-}
-
-@keyframes blink {
-    to {
-        background-color: #ffffff;
-        color: #000000;
-    }
 }
 
 #battery.critical:not(.charging) {
-    background-color: #f53c3c;
-    color: #ffffff;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    color: red;
 }
 
 label:focus {
@@ -186,30 +157,19 @@ label:focus {
 }
 
 #backlight {
-	color: white;
-    background-color: #9b59b6;
-	padding-right: 7px;
 }
 
 #network {
-    /*background-color: #2980b9;*/
-	background-color: #34c0eb;
-	color: black;
 }
 
 #network.disconnected {
-    background-color: #f53c3c;
+	color: red;
 }
 
 #pulseaudio {
-    background-color: #e86dd5;
-	color: black;
 }
 
 #pulseaudio.muted {
-	background-color: #f53c3c;
-    /*background-color: #90b1b1;*/
-    color: white;
 }
 
 #wireplumber {
@@ -315,9 +275,7 @@ label:focus {
 }
 
 #bluetooth{
-	background-color: #2980b9;
 }
 
 #bluetooth.off, #bluetooth.disabled{
-	background-color: #f53c3c;
 }

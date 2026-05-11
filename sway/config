@@ -302,13 +302,10 @@ bindsym $mod+r mode "resize"
 exec waybar
 
 # Aspecto
-default_border pixel 2px
-
-gaps inner 10
-gaps top -10
+default_border pixel 1px
 
 # Colores
-client.focused #000000 #000000 #ffffff #000000 #2ecc71
+client.focused #000000 #000000 #ffffff #000000 #14a5de
 # client.unfocused        #888888    
 # client.focused_inactive #444444   
 # client.urgent           #ff0000   

@@ -4,11 +4,11 @@
     // "position": "bottom", // Waybar position (top|bottom|left|right)
     "height": 37, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
-    "spacing": 3, // Gaps between modules (4px)
+    "spacing": 10, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "sway/mode", "sway/scratchpad"],
-    "modules-center": ["clock"],
-    "modules-right": [ "bluetooth", "pulseaudio", "backlight","cpu", "memory", "network", "battery"],
+    "modules-center": [],
+    "modules-right": ["bluetooth", "custom/separator", "pulseaudio", "custom/separator", "network", "custom/separator", "battery", "custom/separator", "clock"],
     //  Modules configuration
      "sway/workspaces": {
          "disable-scroll": true,
@@ -16,15 +16,15 @@
          "warp-on-scroll": false,
          "format": "{name}{icon}",
          "format-icons": {
-             "1": " ",
-             "2": " ",
-             "3": " ",
-             "4": " ",
-             "5": " ",
-             "6": " ",
-             "7": " ",
+    //         "1": " ",
+    //         "2": " ",
+    //         "3": " ",
+    //         "4": " ",
+    //         "5": " ",
+    //         "6": " ",
+    //         "7": " ",
     //         "8": "",
-             "9": " ",
+    //         "9": " ",
     //         "10": "",
     //         "4": "",
     //         "5": "",
@@ -95,7 +95,7 @@
     "clock": {
 		"interval": 60,
         "timezone": "Europe/Madrid",
-		"format": "{: %a, %d %b %H : %M }",
+		"format": "{:%a, %d %b %H:%M }",
         "tooltip-format": "<tt>{calendar}</tt>"
     },
     "cpu": {
@@ -115,19 +115,19 @@
     },
     "backlight": {
         // "device": "acpi_video1",
-        "format": "{percent}% {icon}",
+        "format": "Brght: {percent}%",
         "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
     "battery": {
         "states": {
             // "good": 95,
-            "warning": 30,
+            "warning": 25,
             "critical": 15
         },
-        "format": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
-        "format-plugged": "{capacity}% ",
-        "format-alt": "{time} {icon}",
+        "format": "Bat: {capacity}%",
+        "format-charging": "Charging: {capacity}% ",
+        "format-plugged": "Plugged: {capacity}%",
+        "format-alt": "{time}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
         "format-icons": ["", "", "", "", ""]
@@ -137,21 +137,21 @@
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} ",  // ({signalStrength}%)
-        "format-ethernet": "{ipaddr}/{cidr} ",
+        "format-wifi": "Wifi: {essid}",  // ({signalStrength}%)
+        "format-ethernet": "{ipaddr}/{cidr}",
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Disconnected ⚠",
+        "format-disconnected": "No internet",
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": "  {format_source}",
-        "format-source": "{volume}% ",
-        "format-source-muted": "",
+        "format": "Vol: {volume}%{format_source}",
+        "format-bluetooth": "Vol: {volume}%  {format_source}",
+        "format-bluetooth-muted": "Muted  {format_source}",
+        "format-muted": "Muted{format_source}",
+        "format-source": " Mic: {volume}%",
+        "format-source-muted": "",
         "format-icons": {
             "headphone": "",
             "hands-free": "",
@@ -164,12 +164,17 @@
         "on-click": "pavucontrol"
     },
 		"bluetooth": {
-			"format-disabled": " off",
-			"format": " {status}",
-			"format-connected": " {device_alias}",
+			"format-disabled": "Bt: off",
+			"format": "Bt: {status}",
+			"format-connected": "Bt: {device_alias}",
 			"format-connected-battery": " {device_alias} {device_battery_percentage}%",
 			"on-click": "$HOME/scripts/switch-bt.sh"
-		}
+		},
+	"custom/separator": {
+		"format": "|",
+		"interval": "once",
+		"tooltip": false
+	}
 },
 
 
@@ -180,11 +185,11 @@
     // "position": "bottom", // Waybar position (top|bottom|left|right)
     "height": 37, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
-    "spacing": 3, // Gaps between modules (4px)
+    "spacing": 10, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "sway/mode", "sway/scratchpad"],
-    "modules-center": ["clock"],
-    "modules-right": ["bluetooth", "pulseaudio" ,"cpu", "memory", "network", "battery"],
+    "modules-center": [],
+    "modules-right": ["bluetooth", "custom/separator", "pulseaudio", "custom/separator", "network", "custom/separator", "battery", "custom/separator", "clock"],
     //  Modules configuration
      "sway/workspaces": {
          "disable-scroll": true,
@@ -192,15 +197,15 @@
          "warp-on-scroll": false,
          "format": "{name}{icon}",
          "format-icons": {
-             "1": " ",
-             "2": " ",
-             "3": " ",
-             "4": " ",
-             "5": " ",
-             "6": " ",    
-             "7": " ",
+    //         "1": " ",
+    //         "2": " ",
+    //         "3": " ",
+    //         "4": " ",
+    //         "5": " ",
+    //         "6": " ",    
+    //         "7": " ",
     //         "8": "",
-             "9": " ",
+    //         "9": " ",
     //         "10": "",
     //         "4": "",
     //         "5": "",
@@ -271,7 +276,7 @@
     "clock": {
 		"interval": 60,
         "timezone": "Europe/Madrid",
-		"format": "{: %a, %d %b %H : %M }",
+		"format": "{:%a, %d %b %H:%M }",
         "tooltip-format": "<tt>{calendar}</tt>"
     },
     "cpu": {
@@ -291,19 +296,19 @@
     },
     "backlight": {
         // "device": "acpi_video1",
-        "format": "{percent}% {icon}",
+        "format": "Brght: {percent}%",
         "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
     "battery": {
         "states": {
             // "good": 95,
-            "warning": 30,
+            "warning": 25,
             "critical": 15
         },
-        "format": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
-        "format-plugged": "{capacity}% ",
-        "format-alt": "{time} {icon}",
+        "format": "Bat: {capacity}%",
+        "format-charging": "Charging: {capacity}% ",
+        "format-plugged": "Plugged: {capacity}%",
+        "format-alt": "{time}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
         "format-icons": ["", "", "", "", ""]
@@ -313,21 +318,21 @@
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} ",  // ({signalStrength}%)
-		"format-ethernet": "{ipaddr}/{cidr} ",
+        "format-wifi": "Wifi: {essid}",  // ({signalStrength}%)
+        "format-ethernet": "{ipaddr}/{cidr}",
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Disconnected ⚠",
+        "format-disconnected": "No internet",
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
-        "format-source": "{volume}% ",
-        "format-source-muted": "",
+        "format": "Vol: {volume}%{format_source}",
+        "format-bluetooth": "Vol: {volume}%  {format_source}",
+        "format-bluetooth-muted": "Muted  {format_source}",
+        "format-muted": "Muted{format_source}",
+        "format-source": " Mic: {volume}%",
+        "format-source-muted": "",
         "format-icons": {
             "headphone": "",
             "hands-free": "",
@@ -340,10 +345,15 @@
         "on-click": "pavucontrol"
     },
 		"bluetooth": {
-			"format-disabled": " off",
-			"format": " {status}",
-			"format-connected": " {device_alias}",
+			"format-disabled": "Bt: off",
+			"format": "Bt: {status}",
+			"format-connected": "Bt: {device_alias}",
 			"format-connected-battery": " {device_alias} {device_battery_percentage}%",
 			"on-click": "$HOME/scripts/switch-bt.sh"
-		}
+		},
+	"custom/separator": {
+		"format": "|",
+		"interval": "once",
+		"tooltip": false
+	}
 }]
