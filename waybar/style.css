@@ -147,7 +147,7 @@ window#waybar.empty #window {
 }
 
 
-#battery.good.charging {
+#battery.charging:not(.good):not(.warning):not(.critical) {
 	color: green;
 }
 
