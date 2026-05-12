@@ -134,6 +134,15 @@ window#waybar.empty #window {
 #battery.charging, #battery.plugged {
 }
 
+
+#battery.good.charging {
+	color: green;
+}
+
+#battery.warning:not(.charging) {
+    color: yellow;
+}
+
 #battery.critical:not(.charging) {
     color: red;
 }

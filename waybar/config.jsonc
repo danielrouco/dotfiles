@@ -120,7 +120,7 @@
     },
     "battery": {
         "states": {
-            // "good": 95,
+            "good": 90,
             "warning": 25,
             "critical": 15
         },
@@ -301,7 +301,7 @@
     },
     "battery": {
         "states": {
-            // "good": 95,
+            "good": 90,
             "warning": 25,
             "critical": 15
         },
