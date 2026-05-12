@@ -96,6 +96,18 @@ button:hover {
     color: #ffffff;
 }
 
+#bluetooth.on{
+	color: #14a5de;
+}
+
+#pulseaudio:not(.muted) {
+	color: #14a5de;
+}
+
+#pulseaudio:not(.source-muted) {
+	color: #14a5de;
+}
+
 #window,
 #workspaces {
     margin: 0;
