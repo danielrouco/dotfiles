@@ -125,7 +125,7 @@
             "critical": 15
         },
         "format": "Bat: {capacity}%",
-        "format-charging": "Charging: {capacity}% ",
+        "format-charging": "Charging: {capacity}%",
         "format-plugged": "Plugged: {capacity}%",
         "format-alt": "{time}",
         // "format-good": "", // An empty format will hide the module
@@ -306,7 +306,7 @@
             "critical": 15
         },
         "format": "Bat: {capacity}%",
-        "format-charging": "Charging: {capacity}% ",
+        "format-charging": "Charging: {capacity}%",
         "format-plugged": "Plugged: {capacity}%",
         "format-alt": "{time}",
         // "format-good": "", // An empty format will hide the module
