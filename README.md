@@ -10,12 +10,21 @@ My linux dotfiles
 - **Zathura:** A simple PDF viewer with vim keybindings
 - **Ranger:** A terminal file manager with vim keybindings
 ## Screenshots
-![Screenshot6](https://github.com/user-attachments/assets/1017859a-dbba-4fee-b88d-bc9dc396b8d6)
-![Screenshot1](https://github.com/user-attachments/assets/044d7421-ade2-4050-9380-f53c160168cd)
-![Screenshot5](https://github.com/user-attachments/assets/a1289b59-bf50-42fb-a320-9b1ee2217dbf)
-![Screenshot3](https://github.com/user-attachments/assets/642b7ae0-c8da-4dc5-981b-8f08ae0d560d)
-![Screenshot2](https://github.com/user-attachments/assets/e45477d8-f05a-47e5-a90c-6532c5546347)
-![Screenshot4](https://github.com/user-attachments/assets/e67e0a92-b501-487f-bf64-632408d050c8)
+![Screenshot 1](https://github.com/user-attachments/assets/1d18a6c5-918e-4e35-978f-adc43c2f6805)
+
+![Screenshot 2](https://github.com/user-attachments/assets/8fcec4f9-9da1-46c7-902f-14e9ac79a417)
+
+![Screenshot 3](https://github.com/user-attachments/assets/8ac58a45-3cda-4cf2-b745-a2891d111137)
+
+### Waybar
+![Screenshot 4](https://github.com/user-attachments/assets/07256739-ea6b-4b28-96ff-046a8a7b389c)
+
+![Screenshot 5](https://github.com/user-attachments/assets/e310f683-40c4-4584-a897-5e984ec194ca)
+
+![Screenshot 6](https://github.com/user-attachments/assets/3cda32f9-8948-48a4-8f7f-9279e1586d34)
+
+![Screenshot 7](https://github.com/user-attachments/assets/1f987c81-8470-40aa-9c60-4622c733904e)
+
 ## Setup
 1. Clone the repository
 ```sh
