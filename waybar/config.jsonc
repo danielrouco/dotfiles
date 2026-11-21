@@ -119,6 +119,7 @@
         "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
     "battery": {
+		"bat": "BAT0",
         "states": {
             "good": 90,
             "warning": 25,
@@ -300,6 +301,7 @@
         "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
     "battery": {
+		"bat": "BAT0",
         "states": {
             "good": 90,
             "warning": 25,
